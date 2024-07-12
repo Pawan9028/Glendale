@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.glendale.test.codets.Navy_Test"/>
+      <class name="com.glendale.test.uniforms.HatsAndCarriers_Test"/>
+      <class name="com.glendale.test.uniforms.GlovesAndScarves_Test"/>
+      <class name="com.glendale.test.millitary.SpaceForce_Test"/>
+      <class name="com.glendale.test.codets.Army_Test"/>
+      <class name="com.glendale.test.uniforms.Accessories_Test"/>
+      <class name="com.glendale.test.codets.SpaceForce_Test"/>
+      <class name="com.glendale.test.firstResponder.AllFirstResponder_Test"/>
+      <class name="com.glendale.test.replicaRifles.RifleSlings_Test"/>
+      <class name="com.glendale.test.swords.AllSwords_Test"/>
+      <class name="com.glendale.test.millitary.MarineCorps_Test"/>
+      <class name="com.glendale.test.uniforms.AllUnifoms_Test"/>
+      <class name="com.glendale.test.codets.AirForce_Test"/>
+      <class name="com.glendale.test.uniforms.SwordsAndSabers_Test"/>
+      <class name="com.glendale.test.uniforms.ApparelAndCustomWear_Test"/>
+      <class name="com.glendale.test.replicaRifles.RifleCases_Test"/>
+      <class name="com.glendale.test.replicaRifles.Rifles_Test"/>
+      <class name="com.glendale.test.replicaRifles.RifleAccessories_Test"/>
+      <class name="com.glendale.test.flags.MourningFlags_Test"/>
+      <class name="com.glendale.test.flags.FlagStands_Test"/>
+      <class name="com.glendale.test.flags.FlagOrnaments_Test"/>
+      <class name="com.glendale.test.aboutUs.ContactUs_Test"/>
+      <class name="com.glendale.test.flags.FlagPoles_Test"/>
+      <class name="com.glendale.test.uniforms.BeretsAndHelmets_Test"/>
+      <class name="com.glendale.test.HomePageTest"/>
+      <class name="com.glendale.test.millitary.Navy_Test"/>
+      <class name="com.glendale.test.codets.CoastGuard_Test"/>
+      <class name="com.glendale.test.uniforms.ArmyGreenServiceUniform_Test"/>
+      <class name="com.glendale.test.uniforms.BeltsAndBuckles_Test"/>
+      <class name="com.glendale.test.uniforms.ShoesAndAccessories_Test"/>
+      <class name="com.glendale.test.flags.AllFlags_Test"/>
+      <class name="com.glendale.test.millitary.AirForce_Test"/>
+      <class name="com.glendale.test.aboutUs.Blogs_Test"/>
+      <class name="com.glendale.test.honorGuard.AllHonorGuard_Test"/>
+      <class name="com.glendale.test.swords.LetterOpenerSwords_Test"/>
+      <class name="com.glendale.test.millitary.Army_Test"/>
+      <class name="com.glendale.test.firstResponder.BadgeHoldersWallets_Test"/>
+      <class name="com.glendale.test.flags.FlagCoversAndCases_Test"/>
+      <class name="com.glendale.test.uniforms.GarmentsAndGearBags_Test"/>
+      <class name="com.glendale.test.aboutUs.AllAboutUs_Test"/>
+      <class name="com.glendale.test.flags.FlagCariers_Test"/>
+      <class name="com.glendale.test.replicaRifles.AllReplicaRiflesPage_Test"/>
+      <class name="com.glendale.test.uniforms.PinsAndTabs_Test"/>
+      <class name="com.glendale.test.swords.CeremonialMillitarySwords_Test"/>
+      <class name="com.glendale.test.firstResponder.SmithAndWarrenBadges_Test"/>
+      <class name="com.glendale.test.millitary.CoastGuard_Test"/>
+      <class name="com.glendale.test.honorGuard.Millitary_Test"/>
+      <class name="com.glendale.test.uniforms.RibbonsMountsAndMedals_Test"/>
+      <class name="com.glendale.test.uniforms.OtherCords_Test"/>
+      <class name="com.glendale.test.codets.ThePershingRiflesGroup_Test"/>
+      <class name="com.glendale.test.honorGuard.Veterans_Test"/>
+      <class name="com.glendale.test.uniforms.ShoulderCords_Test"/>
+      <class name="com.glendale.test.uniforms.AchievementMedals_Test"/>
+      <class name="com.glendale.test.uniforms.Socks_Test"/>
+      <class name="com.glendale.test.codets.MarineCorps_Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
