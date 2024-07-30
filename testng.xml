@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
+<listeners>
+		<listener class-name="com.glendale.testUtils.Listener"></listener>
+	</listeners>
+  <test thread-count="54" name="Test">
     <classes>
       <class name="com.glendale.test.codets.Navy_Test"/>
       <class name="com.glendale.test.uniforms.HatsAndCarriers_Test"/>
