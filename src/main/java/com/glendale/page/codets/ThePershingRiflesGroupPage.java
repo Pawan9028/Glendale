@@ -60,7 +60,7 @@ public class ThePershingRiflesGroupPage {
 	}
 	public void verifyPageTitle() {
 		methodToOpenThePershingRiflesGroupPage();
-		Assert.assertEquals(driver.getTitle(), "Cadets - The Pershing Rifles Group - Page 1 - Glendale Parade Store","Page title does not match the expected title.");
+		Assert.assertEquals(driver.getTitle(), "Pershing Rifles Group | Glendale Parade Store","Page title does not match the expected title.");
 		System.out.println("Title of the page is matched.& title= "+ driver.getTitle());
 	}
 	public void verifyCurrentURL() {
@@ -96,8 +96,9 @@ public class ThePershingRiflesGroupPage {
 		}
 		System.out.println("All filters are enabled.");
 	}
-	public void verifyAllProductsOnThePageLoaded() {
+	public void verifyAllProductsOnThePageLoaded() throws InterruptedException {
 		methodToOpenThePershingRiflesGroupPage();
+		Thread.sleep(1000);
 		for(int i=0;i<listOfProduct.size();i++) {
 			Assert.assertTrue(listOfProduct.get(i).isDisplayed(), "Products not displayed.");
 		}

@@ -3,14 +3,24 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.glendale.test.aboutUs.Blogs_Test">
+      <class name="com.glendale.test.flags.MourningFlags_Test">
         <methods>
+          <include name="verifyPageTitle"/>
           <include name="CloseBrowser"/>
           <include name="openBrowser"/>
-          <include name="verifyReadMoreLinks"/>
           <include name="loadObject"/>
         </methods>
-      </class> <!-- com.glendale.test.aboutUs.Blogs_Test -->
+      </class> <!-- com.glendale.test.flags.MourningFlags_Test -->
+      <class name="com.glendale.test.flags.AllFlags_Test">
+        <methods>
+          <include name="loadObject"/>
+          <include name="CloseBrowser"/>
+          <include name="verifyPageURL"/>
+          <include name="openBrowser"/>
+          <include name="verifyTextOnTheBanner"/>
+          <include name="verifyPageTitle"/>
+        </methods>
+      </class> <!-- com.glendale.test.flags.AllFlags_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

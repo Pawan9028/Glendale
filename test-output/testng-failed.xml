@@ -1,67 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.glendale.test.aboutUs.AllAboutUs_Test">
+      <class name="com.glendale.test.flags.MourningFlags_Test">
         <methods>
-          <include name="loadObject"/>
-          <include name="CloseBrowser"/>
-          <include name="verifyComeVisitUsInPersonSection"/>
-          <include name="openBrowser"/>
-        </methods>
-      </class> <!-- com.glendale.test.aboutUs.AllAboutUs_Test -->
-      <class name="com.glendale.test.firstResponder.BadgeHoldersWallets_Test">
-        <methods>
-          <include name="verifyPageURL"/>
-          <include name="CloseBrowser"/>
-          <include name="verifyAllFltersEnable"/>
-          <include name="openBrowser"/>
-          <include name="verifyProductsNameAndPricePresenceAndButtonsEnable"/>
           <include name="verifyPageTitle"/>
-          <include name="loadObject"/>
-        </methods>
-      </class> <!-- com.glendale.test.firstResponder.BadgeHoldersWallets_Test -->
-      <class name="com.glendale.test.codets.Navy_Test">
-        <methods>
           <include name="CloseBrowser"/>
           <include name="openBrowser"/>
           <include name="loadObject"/>
-          <include name="verifyFeaturedCollectionAccessories"/>
         </methods>
-      </class> <!-- com.glendale.test.codets.Navy_Test -->
-      <class name="com.glendale.test.codets.CoastGuard_Test">
+      </class> <!-- com.glendale.test.flags.MourningFlags_Test -->
+      <class name="com.glendale.test.flags.AllFlags_Test">
         <methods>
-          <include name="verifyIconsBelowTheBestSellersIsPresenceAndNavigation"/>
+          <include name="loadObject"/>
+          <include name="CloseBrowser"/>
+          <include name="verifyPageURL"/>
+          <include name="openBrowser"/>
           <include name="verifyTextOnTheBanner"/>
-          <include name="verifyFlagsSectionPresenceAndRediredirection"/>
-          <include name="CloseBrowser"/>
-          <include name="verifyCustomFlagsSectionPresenceAndRediredirection"/>
-          <include name="openBrowser"/>
-          <include name="verifyBunleProductSectionPresenceWithProducts"/>
-          <include name="verifyFeaturedCollectionUniformItems"/>
-          <include name="verifyFeaturedCollectionFlagsItems"/>
-          <include name="verifyFeaturedCollectionAccessories"/>
-          <include name="loadObject"/>
-          <include name="verifyFeaturedCollectionTeams"/>
+          <include name="verifyPageTitle"/>
         </methods>
-      </class> <!-- com.glendale.test.codets.CoastGuard_Test -->
-      <class name="com.glendale.test.codets.ThePershingRiflesGroup_Test">
-        <methods>
-          <include name="verifyCrossBrowserCompatibility"/>
-          <include name="CloseBrowser"/>
-          <include name="openBrowser"/>
-          <include name="loadObject"/>
-        </methods>
-      </class> <!-- com.glendale.test.codets.ThePershingRiflesGroup_Test -->
-      <class name="com.glendale.test.millitary.AirForce_Test">
-        <methods>
-          <include name="verifyFeaturedCollectionFlags"/>
-          <include name="CloseBrowser"/>
-          <include name="openBrowser"/>
-          <include name="loadObjects"/>
-        </methods>
-      </class> <!-- com.glendale.test.millitary.AirForce_Test -->
+      </class> <!-- com.glendale.test.flags.AllFlags_Test -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

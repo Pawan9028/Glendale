@@ -41,7 +41,7 @@ public class ThePershingRiflesGroup_Test extends BaseClass{
 	}
 
 	@Test
-	public void verifyAllProductsOnThePageLoaded() {
+	public void verifyAllProductsOnThePageLoaded() throws InterruptedException {
 		obj.verifyAllProductsOnThePageLoaded();
 	}
 

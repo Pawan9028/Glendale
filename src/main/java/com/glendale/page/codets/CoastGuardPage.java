@@ -25,8 +25,8 @@ public class CoastGuardPage {
 	
 	@FindBy(xpath  = "//div[@class='gld-flag-banner gld-inner-banner-with-desc coast-guard-banner']")
 	WebElement banner;
-	@FindBy(xpath = "//a[@href=\"/military/coast-guard/\"]")
-	WebElement shopNowBbuttonOnTheBanner;
+	@FindBy(xpath = "//a[@href='/content/pdf/JROTC_Trifold_2024_F1.pdf']")
+	WebElement viewJROTCTrifoldBbuttonOnTheBanner;
 	@FindBy(xpath = "//div[@class='gld-flag-txt']/p[contains(text(),'The Coast Guard established its first JROTC')]")
 	WebElement textOnTheBanner;
 	
@@ -60,9 +60,9 @@ public class CoastGuardPage {
 	@FindBy(xpath = "//div[@class='jrotc-title-center']/a[@href=\"/custom-flags-guidons-banners-streamers/\"]")
 	WebElement customFlagsShopNowButton;
 	
-	@FindBy(xpath = "//div[@style='width: 4011.75px; display: flex; flex-direction: row; transition: all 400ms ease 0s; transform: translate3d(0px, 0px, 0px);']/div[@style='flex: 1 1 0%; width: 11.1111%;']/div[@class='css-1k0woj']")
+	@FindBy(xpath = "//div[@id='sd-product-set-carousel-87cc32d4-98cf-4248-9c56-340eec5169fa']/div/div/div")
 	List<WebElement> bundlesProductList;
-	@FindBy(xpath = "//div[@style='width: 4011.75px; display: flex; flex-direction: row; transition: all 400ms ease 0s; transform: translate3d(0px, 0px, 0px);']/div[@style='flex: 1 1 0%; width: 11.1111%;']/div[@class='css-1k0woj']/a")
+	@FindBy(xpath = "//div[@id='sd-product-set-carousel-87cc32d4-98cf-4248-9c56-340eec5169fa']/div/div/div")
 	List<WebElement> imagesOfBundleProducts;
 	
 	@FindBy(xpath = "//div[@class='slick-track']/li[@class='product slick-slide slick-cloned']")
@@ -84,10 +84,10 @@ public class CoastGuardPage {
 		// millitary_Tab.click();
 		Assert.assertTrue(banner.isDisplayed(), "Banner is not displayed"); 
 		System.out.println("Banner is Present");
-		String href = shopNowBbuttonOnTheBanner.getAttribute("href");
+		String href = viewJROTCTrifoldBbuttonOnTheBanner.getAttribute("href");
 		driver.navigate().to(href);
 		String expSubString = "www.glendale.com"; 
-		Assert.assertTrue(driver.getCurrentUrl().contains(expSubString), "Shop Now button is not redirected to the Shopping page");
+		Assert.assertTrue(driver.getCurrentUrl().contains(expSubString), "VIEW JROTC TRIFOLD button is not redirected to the Shopping page");
 		System.out.println("Clicked on the button on the banner and navigate to the URL: " + driver.getCurrentUrl());
 		driver.navigate().back();
 	}

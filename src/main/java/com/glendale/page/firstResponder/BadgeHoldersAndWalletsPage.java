@@ -57,7 +57,7 @@ public class BadgeHoldersAndWalletsPage {
 	public void verifyPageTitle() {
 		methodToOpenTheBadgesHoldersAndWalletsPage();
 		String actTitle = driver.getTitle();
-		String expTitle = "First Responders - Badge Holders & Wallets - Glendale Parade Store";
+		String expTitle = "Glendale Parade Store - Badge Holders & Wallets";
 		Assert.assertEquals(actTitle, expTitle, "Title of the page does not matched.");
 		System.out.println("Title of the page is matched.");
 	}

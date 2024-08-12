@@ -65,7 +65,7 @@ public class AllAboutUsPage {
 		System.out.println(comeVisitUsInPersonHeading.getText()+" is displayed on the page.");
 		String fontSize = comeVisitUsInPersonHeading.getCssValue("font-size");
 		System.out.println("Font-size of the COME VISIT US IN PERSON is  "+ fontSize);
-		String expText = "At Glendale Parade Store, our passion is delivering friendly,";
+		String expText = "Glendale Parade Store is open from 8am to 5pm Monday through Friday";
 		Assert.assertTrue(listOfParagraph.get(6).getText().contains(expText),"COME VISIT US IN PERSON section is not displayed.");
 		System.out.println("COME VISIT US IN PERSON section's text is displayed and matched perfectly as expected.");
 		String fontSize1 = listOfParagraph.get(6).getCssValue("font-size");

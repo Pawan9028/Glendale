@@ -57,9 +57,9 @@ public class AirForcePage {
 	@FindBy(xpath = "//div[@class='gld-feat-simlr gld-feat-fifty jrotc-cflags-bg-lg']/div[@class='jrotc-title-center']/a")
 	WebElement customFlagsShopNowButton;
 	
-	@FindBy(xpath = "//div[@style='width: 2202.5px; display: flex; flex-direction: row; transition: all 400ms ease 0s; transform: translate3d(0px, 0px, 0px);']/div[@style='flex: 1 1 0%; width: 20%;']/div[@class='css-1k0woj']")
+	@FindBy(xpath = "//div[@id='sd-product-set-container-47a07218-4920-454d-a78e-af0d4f247a86']/div/div/div/div/a")
 	List<WebElement> bundlesProductList;
-	@FindBy(xpath = "//div[@style='width: 2202.5px; display: flex; flex-direction: row; transition: all 400ms ease 0s; transform: translate3d(0px, 0px, 0px);']/div[@style='flex: 1 1 0%; width: 20%;']/div[@class='css-1k0woj']/a")
+	@FindBy(xpath = "//div[@id='sd-product-set-container-47a07218-4920-454d-a78e-af0d4f247a86']/div/div/div/div/a")
 	List<WebElement> imagesOfBundleProducts;
 	
 	@FindBy(xpath = "//div[@class='slick-track']/li[@class='product slick-slide slick-cloned']")

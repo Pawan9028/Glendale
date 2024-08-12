@@ -25,8 +25,8 @@ public class MarineCorpsPage {
 	
 	@FindBy(xpath  = "//div[@class='gld-flag-banner gld-inner-banner-with-desc marine-cops-jrotc-banner']")
 	WebElement banner;
-	@FindBy(xpath = "//a[@href=\"/cadets/marine-corps/\"]")
-	WebElement shopNowBbuttonOnTheBanner;
+	@FindBy(xpath = "//a[@href='/content/pdf/JROTC_Trifold_2024_F1.pdf']")
+	WebElement viewJROTCTrifoldBbuttonOnTheBanner;
 	@FindBy(xpath = "//div[@class='gld-flag-txt']/p[contains(text(),'The MCJROTC mission is to develop')]")
 	WebElement textOnTheBanner;
 	
@@ -60,9 +60,9 @@ public class MarineCorpsPage {
 	@FindBy(xpath = "//div[@class='jrotc-title-center']/a[@href=\"/custom-flags-guidons-banners-streamers/\"]")
 	WebElement customFlagsShopNowButton;
 	
-	@FindBy(xpath = "//div[@style='width: 4011.75px; display: flex; flex-direction: row; transition: all 400ms ease 0s; transform: translate3d(0px, 0px, 0px);']/div[@style='flex: 1 1 0%; width: 11.1111%;']/div[@class='css-1k0woj']")
+	@FindBy(xpath = "//div[@id='sd-product-set-carousel-1afabb38-5680-48ba-9a8a-a66375b752f6']/div/div/div")
 	List<WebElement> bundlesProductList;
-	@FindBy(xpath = "//div[@style='width: 4011.75px; display: flex; flex-direction: row; transition: all 400ms ease 0s; transform: translate3d(0px, 0px, 0px);']/div[@style='flex: 1 1 0%; width: 11.1111%;']/div[@class='css-1k0woj']/a")
+	@FindBy(xpath = "//div[@id='sd-product-set-carousel-1afabb38-5680-48ba-9a8a-a66375b752f6']/div/div/div")
 	List<WebElement> imagesOfBundleProducts;
 	
 	@FindBy(xpath = "//div[@class='slick-track']/li[@class='product slick-slide slick-cloned']")
@@ -84,10 +84,10 @@ public class MarineCorpsPage {
 		// millitary_Tab.click();
 		Assert.assertTrue(banner.isDisplayed(), "Banner is not displayed"); 
 		System.out.println("Banner is Present");
-		String href = shopNowBbuttonOnTheBanner.getAttribute("href");
+		String href = viewJROTCTrifoldBbuttonOnTheBanner.getAttribute("href");
 		driver.navigate().to(href);
 		String expSubString = "www.glendale.com"; 
-		Assert.assertTrue(driver.getCurrentUrl().contains(expSubString), "Shop Now button is not redirected to the Shopping page");
+		Assert.assertTrue(driver.getCurrentUrl().contains(expSubString), "VIEW JROTC TRIFOLD button is not redirected to the Shopping page");
 		System.out.println("Clicked on the button on the banner and navigate to the URL: " + driver.getCurrentUrl());
 		driver.navigate().back();
 	}
@@ -113,9 +113,10 @@ public class MarineCorpsPage {
 		}
 	}
 
-	public void verifyFeaturedCollectionTeams() {
+	public void verifyFeaturedCollectionTeams() throws InterruptedException {
 		methodToOpenTheArmyPage();
 		Assert.assertTrue(fc_Teams.isDisplayed(), "Flags of Featrured Collection is not displayed.");
+		Thread.sleep(1000);
 		for (int i = 0; i < teamsList.size(); i++) {
 			String href = teamsList.get(i).getAttribute("href");
 			driver.navigate().to(href);

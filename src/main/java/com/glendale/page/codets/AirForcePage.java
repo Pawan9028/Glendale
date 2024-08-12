@@ -24,8 +24,8 @@ public class AirForcePage {
 	
 	@FindBy(xpath  = "//div[@class='gld-flag-banner gld-inner-banner-with-desc new-afj-rfj-banner']")
 	WebElement banner;
-	@FindBy(xpath = "//a[@href=\"/cadets/air-force/\"]")
-	WebElement shopNowBbuttonOnTheBanner;
+	@FindBy(xpath = "//a[@href='/content/pdf/JROTC_Trifold_2024_F1.pdf']")
+	WebElement viewJROTCTrifoldBbuttonOnTheBanner;
 	@FindBy(xpath = "//div[@class='gld-flag-txt']/p[contains(text(),'The mission of Air Force Junior ROTC is to \"Develop')]")
 	WebElement textOnTheBanner;
 	
@@ -59,9 +59,9 @@ public class AirForcePage {
 	@FindBy(xpath = "//div[@class='gld-feat-simlr gld-feat-fifty jrotc-cflags-bg-lg']/div[@class='jrotc-title-center']/a")
 	WebElement customFlagsShopNowButton;
 	
-	@FindBy(xpath = "//div[@style='width: 4457.5px; display: flex; flex-direction: row; transition: all 400ms ease 0s; transform: translate3d(0px, 0px, 0px);']/div[@style='flex: 1 1 0%; width: 10%;']")
+	@FindBy(xpath = "//div[@id='sd-product-set-carousel-7d23b129-4481-4281-b0d4-0c16ea2348f1']/div/div/div")
 	List<WebElement> bundlesProductList;
-	@FindBy(xpath = "//div[@style='width: 4457.5px; display: flex; flex-direction: row; transition: all 400ms ease 0s; transform: translate3d(0px, 0px, 0px);']/div[@style='flex: 1 1 0%; width: 10%;']/div[@class='css-1k0woj']")
+	@FindBy(xpath = "//div[@id='sd-product-set-carousel-7d23b129-4481-4281-b0d4-0c16ea2348f1']/div/div/div")
 	List<WebElement> imagesOfBundleProducts;
 	
 	@FindBy(xpath = "//div[@class='slick-track']/li[@class='product slick-slide slick-cloned']")
@@ -83,11 +83,12 @@ public class AirForcePage {
 		// millitary_Tab.click();
 		Assert.assertTrue(banner.isDisplayed(), "Banner is not displayed"); 
 		System.out.println("Banner is Present");
-		String href = shopNowBbuttonOnTheBanner.getAttribute("href");
+		String href = viewJROTCTrifoldBbuttonOnTheBanner.getAttribute("href");
 		driver.navigate().to(href);
 		String expSubString = "www.glendale.com"; 
-		Assert.assertTrue(driver.getCurrentUrl().contains(expSubString), "Shop Now button is not redirected to the Shopping page");
-		System.out.println("Clicked on the button on the banner and navigate to the URL: " + driver.getCurrentUrl());
+		Assert.assertTrue(driver.getCurrentUrl().contains(expSubString), "VIEW AGSU TRIFOLD button is not redirected to the Shopping page");
+		driver.navigate().back();
+		System.out.println("Clicked on the button on the banner and navigated to the URL: " + driver.getCurrentUrl());
 		driver.navigate().back();
 	}
 	public void verifyTextOnTheBanner() throws InterruptedException {

@@ -31,7 +31,7 @@ public class MarineCorps_Test extends BaseClass {
 	}
 
 	@Test
-	public void verifyFeaturedCollectionTeams() {
+	public void verifyFeaturedCollectionTeams() throws InterruptedException {
 		obj.verifyFeaturedCollectionTeams();
 	}
 

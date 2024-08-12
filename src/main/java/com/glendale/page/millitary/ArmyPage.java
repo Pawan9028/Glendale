@@ -24,8 +24,8 @@ public class ArmyPage {
 	List<WebElement> millitaryDropdownList;
 	@FindBy(css = "body > div:nth-child(6) > div > div:nth-child(1) > div > div:nth-child(2) > div")
 	WebElement banner;
-	@FindBy(xpath = "//a[@href=\"/military/army/\"]")
-	WebElement shopNowBbuttonOnTheBanner;
+	@FindBy(xpath = "//a[@href='/content/pdf/AGSU_Trifold_2024_F1.pdf']")
+	WebElement viewAGSUTrifoldBbuttonOnTheBanner;
 	@FindBy(xpath = "//div[@class='gld-feat-simlr unifrm-bg-jrotc']")
 	WebElement fc_UniformItems;
 	@FindBy(xpath = "//div[@class='gld-feat-simlr unifrm-bg-jrotc']/ul/li/a")
@@ -50,9 +50,9 @@ public class ArmyPage {
 	WebElement customFlagsSection;
 	@FindBy(xpath = "//div[@class='jrotc-title-center']/a[@href=\"/custom-flags-guidons-banners-streamers/\"]")
 	WebElement customFlagsShopNowButton;
-	@FindBy(xpath = "//div[@id='sd-product-set-carousel-47a07218-4920-454d-a78e-af0d4f247a86']/div[@style='width: 1440px; display: flex; flex-direction: row; transition: all 400ms ease 0s; transform: translate3d(0px, 0px, 0px);']/div[@style='flex: 1 1 0%; width: 25%;']")
+	@FindBy(xpath = "//div[@id='sd-product-set-carousel-47a07218-4920-454d-a78e-af0d4f247a86']/div/div")
 	List<WebElement> bundlesProductList;
-	@FindBy(xpath = "//div[@id='sd-product-set-carousel-47a07218-4920-454d-a78e-af0d4f247a86']/div[@style='width: 1440px; display: flex; flex-direction: row; transition: all 400ms ease 0s; transform: translate3d(0px, 0px, 0px);']/div[@style='flex: 1 1 0%; width: 25%;']/div[@class='css-1k0woj/img']/a")
+	@FindBy(xpath = "//div[@id='sd-product-set-carousel-47a07218-4920-454d-a78e-af0d4f247a86']/div/div")
 	List<WebElement> imagesOfBundleProducts;
 	@FindBy(xpath = "//div[@class='category-products']/div[@class='container']/div[@class='category-product-list']/ul[@class='productGrid-bslider slick-initialized slick-slider']/div[@class='slick-list draggable']/div[@class='slick-track']/li")
 	List<WebElement> bestSellersList;
@@ -69,10 +69,10 @@ public class ArmyPage {
 		// millitary_Tab.click();
 		Assert.assertTrue(banner.isDisplayed(), "Banner is not displayed");
 		System.out.println("Banner is Present");
-		String href = shopNowBbuttonOnTheBanner.getAttribute("href");
+		String href = viewAGSUTrifoldBbuttonOnTheBanner.getAttribute("href");
 		driver.navigate().to(href);
-		Assert.assertEquals(driver.getCurrentUrl(), href, "Shop Now button is not redirected to the Shopping page");
-		System.out.println("Clicked on the button on the banner and navigate to the URL: " + driver.getCurrentUrl());
+		Assert.assertEquals(driver.getCurrentUrl(), href, "VIEW AGSU TRIFOLD button is not redirected to the Shopping page");
+		System.out.println("Clicked on the button on the banner and navigated to the URL: " + driver.getCurrentUrl());
 		driver.navigate().back();
 	}
 
