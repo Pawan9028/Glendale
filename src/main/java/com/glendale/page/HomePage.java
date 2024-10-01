@@ -232,7 +232,7 @@ public class HomePage {
 		Actions action = new Actions(driver);
 		action.moveToElement(codetDropdown).build().perform();
 		for (int i = 1; i < codetDropdownsList.size(); i++) {
-			Thread.sleep(1000);
+			Thread.sleep(2000);
 			System.out.println("Dropdown: " + codetDropdownsList.get(i).getText());
 			codetDropdownsList.get(i).click();
 			System.out.println("URL: " + driver.getCurrentUrl());
