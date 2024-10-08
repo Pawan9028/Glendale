@@ -22,10 +22,10 @@ public class ArmyPage {
 	WebElement millitary_Tab;
 	@FindBy(xpath = "//div[@id='navPages-Military']/ul[@class='navPage-subMenu-list']/li[@class='navPage-subMenu-item']/a[@class='navPages-action']")
 	List<WebElement> millitaryDropdownList;
-	@FindBy(css = "body > div:nth-child(6) > div > div:nth-child(1) > div > div:nth-child(2) > div")
+	@FindBy(xpath = "//div[@class='gld-flag-banner gld-inner-banner-with-desc new-army-jrotc-agsu-banner slick-slide slick-current slick-active']")
 	WebElement banner;
 	@FindBy(xpath = "//a[@href='/content/pdf/AGSU_Trifold_2024_F1.pdf']")
-	WebElement viewAGSUTrifoldBbuttonOnTheBanner;
+	List<WebElement> viewAGSUTrifoldBbuttonOnTheBanner;
 	@FindBy(xpath = "//div[@class='gld-feat-simlr unifrm-bg-jrotc']")
 	WebElement fc_UniformItems;
 	@FindBy(xpath = "//div[@class='gld-feat-simlr unifrm-bg-jrotc']/ul/li/a")
@@ -42,13 +42,13 @@ public class ArmyPage {
 	WebElement fc_CeremonialItems;
 	@FindBy(xpath = "//div[@class='gld-feat-simlr carm-access-bg']/ul/li/a")
 	List<WebElement> ceremonialItemsList;
-	@FindBy(css = "body > div:nth-child(6) > div > div:nth-child(1) > div > div:nth-child(4) > div > div.gld-feat-simlr.gld-feat-fifty.jrotc-flags-bg-lg")
+	@FindBy(xpath = "//div[@class='gld-feat-simlr gld-feat-fifty jrotc-flags-bg-lg']")
 	WebElement flagsSection;
-	@FindBy(xpath = "//a[@href=\"/page/flags/\"]")
+	@FindBy(xpath = "//div[@class='gld-feat-simlr gld-feat-fifty jrotc-flags-bg-lg']/div/a")
 	WebElement flagsShopNowButton;
-	@FindBy(css = "body > div:nth-child(6) > div > div:nth-child(1) > div > div:nth-child(4) > div > div.gld-feat-simlr.gld-feat-fifty.jrotc-cflags-bg-lg")
+	@FindBy(xpath = "//div[@class='gld-feat-simlr gld-feat-fifty jrotc-cflags-bg-lg']")
 	WebElement customFlagsSection;
-	@FindBy(xpath = "//div[@class='jrotc-title-center']/a[@href=\"/custom-flags-guidons-banners-streamers/\"]")
+	@FindBy(xpath = "//div[@class='gld-feat-simlr gld-feat-fifty jrotc-cflags-bg-lg']/div/a")
 	WebElement customFlagsShopNowButton;
 	@FindBy(xpath = "//div[@id='sd-product-set-carousel-47a07218-4920-454d-a78e-af0d4f247a86']/div/div")
 	List<WebElement> bundlesProductList;
@@ -69,7 +69,7 @@ public class ArmyPage {
 		// millitary_Tab.click();
 		Assert.assertTrue(banner.isDisplayed(), "Banner is not displayed");
 		System.out.println("Banner is Present");
-		String href = viewAGSUTrifoldBbuttonOnTheBanner.getAttribute("href");
+		String href = viewAGSUTrifoldBbuttonOnTheBanner.get(0).getAttribute("href");
 		driver.navigate().to(href);
 		Assert.assertEquals(driver.getCurrentUrl(), href, "VIEW AGSU TRIFOLD button is not redirected to the Shopping page");
 		System.out.println("Clicked on the button on the banner and navigated to the URL: " + driver.getCurrentUrl());

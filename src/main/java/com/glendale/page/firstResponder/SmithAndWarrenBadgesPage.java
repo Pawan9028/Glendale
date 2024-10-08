@@ -22,7 +22,7 @@ public class SmithAndWarrenBadgesPage {
 	@FindBy(xpath = "//div[@id='navPages-155']/ul[@class='navPage-subMenu-list']/li[@class='navPage-subMenu-item']/a[@class='navPage-subMenu-action navPages-action']")
 	List<WebElement> firstResponderDropdownList;
 	
-	@FindBy(xpath = "//div[@class='page-content page-content--centered ']/p[contains(text(),'Custom design your own badges, nameplates, or medals with any colors, text, and images you want to create unique awards, gifts, or official emblems.')]")
+	@FindBy(xpath = "//div[@class='page-content page-content--centered ']/h3[contains(text(),'Custom design your own badges, nameplates, or medals with any colors, text, and images you want to create unique awards, gifts, or official emblems.')]")
 	WebElement textOnThePage;
 	
 	

@@ -34,7 +34,7 @@ public class SocksPage {
 	@FindBy(xpath = "//div[@class='accordion-block']/div[@class='accordion-nav-clear-holder']/button[@class='accordion-navigation toggleLink is-open']/span/*[@class='icon accordion-indicator toggleLink-text toggleLink-text--on']")
 	List<WebElement> listOfAllFiltersCloseOpenIcons;
 	
-	@FindBy(xpath = "//div[@data-list-name='Category: Socks']/ul[@class='productGrid']/li")
+	@FindBy(xpath = "//div[@class='card-img-container']")
 	List<WebElement> listOfProduct;
 	@FindBy(xpath = "//h3[@class='card-title']/a")
 	List<WebElement> nameOfTheProducts;
@@ -52,7 +52,7 @@ public class SocksPage {
 	public void verifyPageTitle() {
 		methodToOpenTheSocksPage();
 		String actTitle = driver.getTitle();
-		String expTitle = "Uniforms - Socks - Glendale Parade Store";
+		String expTitle = "Uniforms - Socks - Page 1 - Glendale Parade Store";
 		Assert.assertEquals(actTitle, expTitle, "Title of the page does not matched.");
 		System.out.println("Title of the page is matched.");
 	}

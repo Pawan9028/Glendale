@@ -22,7 +22,7 @@ public class ArmyPage {
 	@FindBy(xpath = "//div[@id='navPages-44']/ul[@class='navPage-subMenu-list']/li[@class='navPage-subMenu-item']/a[@class='navPage-subMenu-action navPages-action']")
 	List<WebElement> codetsDropdownList;
 	
-	@FindBy(xpath  = "//div[@class='gld-flag-banner gld-inner-banner-with-desc new-army-jrotc-banner']")
+	@FindBy(xpath  = "//div[@class='gld-flag-banner gld-inner-banner-with-desc new-army-jrotc-banner slick-slide']")
 	WebElement banner;
 	@FindBy(xpath = "//a[@href='/content/pdf/AGSU_Trifold_2024_F1.pdf']")
 	WebElement viewAGSUTrifoldBbuttonOnTheBanner;

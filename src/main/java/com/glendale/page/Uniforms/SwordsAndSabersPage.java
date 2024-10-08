@@ -22,8 +22,8 @@ public class SwordsAndSabersPage {
 	@FindBy(xpath = "//div[@id='navPages-29']/ul[@class='navPage-subMenu-list']/li/a")
 	List<WebElement> uniformsList;
 
-	@FindBy(xpath = "//div[@class='category_description_only']/p")
-	WebElement textOnThePage;
+	@FindBy(xpath = "//div[@class='ExploreBtn']/a")
+	WebElement exploreLetterOpenerBtn;;
 
 	@FindBy(id = "sort")
 	WebElement sortByFilter;
@@ -54,7 +54,7 @@ public class SwordsAndSabersPage {
 	public void verifyPageURL() {
 		methodToOpenTheSwordsAndSabbersPage();
 		String currentURL = driver.getCurrentUrl();
-		String expURL = "https://www.glendale.com/uniforms/swords-sabers/";
+		String expURL = "https://www.glendale.com/swords/ceremonial-military-swords/";
 		Assert.assertEquals(currentURL, expURL, "URL of the page not matched with the expected URL");
 		System.out.println("Actual URL matched with the expected URL of the page.");
 	}
@@ -62,7 +62,7 @@ public class SwordsAndSabersPage {
 	public void verifyPageTitle() {
 		methodToOpenTheSwordsAndSabbersPage();
 		String actTitle = driver.getTitle();
-		String expTitle = "Uniforms - Swords & Sabers - Page 1 - Glendale Parade Store";
+		String expTitle = "Ceremonial Military Swords";
 		Assert.assertEquals(actTitle, expTitle, "Title of the page does not matched.");
 		System.out.println("Title of the page is matched.");
 	}
@@ -84,18 +84,6 @@ public class SwordsAndSabersPage {
 		}
 		Assert.assertTrue(listOfSortByFilters.get(3).isSelected(), "Sort option is not selected.");
 		System.out.println("Sort By Functionality tested by selecting A to Z sorting option.");
-	}
-
-	public void verifyTextPresenceAndFontSize() {
-		methodToOpenTheSwordsAndSabbersPage();
-			Assert.assertTrue(textOnThePage.isDisplayed(), "Text on the the page is not displayed.");
-			System.out.println("Text is present on the page");
-			String actText = textOnThePage.getText();
-			String expText = "For many members of the military, a ceremonial sword or";
-			Assert.assertTrue(actText.contains(expText), "Text on the the page is not matched.");
-			System.out.println("Text on the the page is matched.");
-			String fontSize = textOnThePage.getCssValue("font-size");
-			System.out.println("Font Size of the text= " + fontSize);
 	}
 
 	public void verifyProductsNameAndPricePresenceAndButtonsEnable() {
@@ -144,6 +132,13 @@ public class SwordsAndSabersPage {
 			driver.navigate().back();
 		}
 		System.out.println("verifyPaginationRedirection testcase is passed successfully.");
+	}
+	public void verifyExploreLetterOpenenersButton() {
+		methodToOpenTheSwordsAndSabbersPage();
+		Assert.assertTrue(exploreLetterOpenerBtn.isEnabled(),"Explore Letter Openers button is not enabled.");
+		exploreLetterOpenerBtn.click();
+		Assert.assertEquals(driver.getCurrentUrl(), "https://www.glendale.com/swords/letter-openers/");
+		System.out.println("Explore Letter Openers button is present and navigated to the Letter-Openers page.");
 	}
 
 }

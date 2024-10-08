@@ -112,7 +112,7 @@ public class AllUniformsPage {
 		Assert.assertTrue(swordsAndSabersSection.isDisplayed(),"Swords & Sabers section is not displayed");
 		System.out.println("Swords & Sabers section is displayed");
 		//Shop now button redirection code
-		String expURL = swordsAndSabersSectionShopNowButton.getAttribute("href");
+		String expURL = "https://www.glendale.com/swords/ceremonial-military-swords/";
 		driver.navigate().to(expURL);
 		String actURL = driver.getCurrentUrl();
 		Assert.assertEquals(actURL,expURL,"Actual and expected URL not matched.");

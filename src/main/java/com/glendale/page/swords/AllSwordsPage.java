@@ -57,7 +57,7 @@ public class AllSwordsPage {
 	public void verifyPageTitle() {
 		methodToOpenTheAllSwordsPage();
 		String actTitle = driver.getTitle();
-		String expTitle = "Swords - Glendale Parade Store";
+		String expTitle = "Swords - Page 1 - Glendale Parade Store";
 		Assert.assertEquals(actTitle, expTitle, "Title of the page does not matched.");
 		System.out.println("Title of the page is matched.");
 	}

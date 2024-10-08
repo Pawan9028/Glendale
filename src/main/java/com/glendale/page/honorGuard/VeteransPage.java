@@ -59,7 +59,7 @@ public class VeteransPage {
 	public void verifyPageTitle() {
 		methodToOpenTheVeteransPage();
 		String actTitle = driver.getTitle();
-		String expTitle = "Honor Guard - Veterans - Page 1 - Glendale Parade Store";
+		String expTitle = "Veterans | Veterans Accessories | Glendale Parade Store";
 		Assert.assertEquals(actTitle, expTitle, "Title of the page does not matched.");
 		System.out.println("Title of the page is matched.");
 	}

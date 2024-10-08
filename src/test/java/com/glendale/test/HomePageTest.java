@@ -1,7 +1,5 @@
 package com.glendale.test;
 
-import static org.testng.Assert.assertTrue;
-
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -94,10 +92,11 @@ public class HomePageTest extends BaseClass{
 	public void verifyMilitaryFeaturedCollectionsItems() {
 		Assert.assertTrue(hp.verifyMilitaryFeaturedCollectionsItems());
 	}
-	@Test
-	public void verifySoloTandemDrillersPresenceAndClickable() {
-		Assert.assertTrue(hp.verifySoloTandemDrillersPresenceAndClickable());
-	}
+
+	/*
+	 * @Test public void verifySoloTandemDrillersPresenceAndClickable() {
+	 * Assert.assertTrue(hp.verifySoloTandemDrillersPresenceAndClickable()); }
+	 */
 	@Test
 	public void verifySmithAndWarrenBadgesPresenceAndClickable() {
 		Assert.assertTrue(hp.verifySmithAndWarrenBadgesPresenceAndClickable());

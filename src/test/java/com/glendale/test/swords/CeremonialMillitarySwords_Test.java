@@ -25,77 +25,28 @@ public class CeremonialMillitarySwords_Test extends BaseClass{
 	}
 	
 	@Test
-
-	public void testBranchDropdown() {
-		obj.testBranchDropdown();
-	}
-	
-	@Test
-	public void testNameDropdown() {
-		obj.testNameDropdown();
-	}
-	
-	@Test
-	public void testLengthDropdown() {
-		obj.testLengthDropdown();
-	}
-	
-	@Test
-	public void testBranchDropdownOptions() {
-		obj.testBranchDropdownOptions();
+	public void verifyProductImageSize() {
+		obj.verifyProductImageSize();
 	}
 	@Test
-	public void testLengthDropdownOptions() {
-		obj.testLengthDropdownOptions();
+	public void testSortFunctionality() {
+		obj.testSortFunctionality();
 	}
 	@Test
-	public void testNameDropdownOptions() {
-		obj.testNameDropdownOptions();
-	}
-	
-	@Test
-	public void testPageLoadTime() {
-		obj.testPageLoadTime();
+	public void verifyResponsiveDesign() {
+		obj.verifyResponsiveDesign();
 	}
 	@Test
-	public void verifyTitleOfTheProductIsPresent() {
-		obj.verifyTitleOfTheProductIsPresent();
+	public void verifyPageLoadTime() {
+		obj.verifyPageLoadTime();
 	}
 	@Test
-	public void verifyPriceOfTheProductIsPresence() {
-		obj.verifyPriceOfTheProductIsPresence();
+	public void verifyProductsNameAndPricePresenceAndButtonsEnable() {
+		obj.verifyProductsNameAndPricePresenceAndButtonsEnable();
 	}
 	@Test
-	public void veryImageOfTheProductIsPresence() {
-		obj.veryImageOfTheProductIsPresence();
-	}
-	@Test
-	public void verifyDescriptionOfTheProduct() {
-		obj.verifyDescriptionOfTheProduct();
-	}
-	@Test
-	public void verifyRelatedProductSection() {
-		obj.verifyRelatedProductSection();
-	}
-	@Test
-	public void verifyTestimonialSectionIsPresence() {
-		obj.verifyTestimonialSectionIsPresence();
-	}
-	@Test
-	public void verifyAddToCartButtonPresence() {
-		obj.verifyAddToCartButtonPresence();
-	}
-	@Test
-	public void verifyAddToCartButtonFunctionality() {
-		obj.verifyAddToCartButtonFunctionality();
-	}
-	@Test
-	public void testProductIncreaseButton() {
-		obj.testProductIncreaseButton();
-	}
-	@Test
-	public void testProductDecreaseButton() {
-		obj.testProductDecreaseButton();
+	public void verifyExploreLetterOpenenersButton() {
+		obj.verifyExploreLetterOpenenersButton();
 	}
 
 

@@ -35,7 +35,7 @@ public class HomePage {
 	@FindBy(css = "body > header > div > nav > ul.navUser-section.navUser-section--alt > li.navUser-item.navUser-item--account > a.head-signin-txt.navUser-action")
 	WebElement accountIcon;
 
-	@FindBy(css = "#main-content > section > div > div > div.slick-slide.slick-current.slick-active > div > a > img")
+	@FindBy(css = "#main-content > section > div > div > div.slick-slide.slick-current.slick-active > div > img")
 	WebElement bannerImg;
 
 	@FindBy(xpath = "//ul[@class='navPages-list']/li[@class='navPages-item']/a[@aria-label=\"Military\"]")

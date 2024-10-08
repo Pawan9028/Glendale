@@ -50,8 +50,8 @@ public class SwordsAndSabers_Test extends BaseClass{
 		obj.verifyPaginationRedirection();
 	}
 	@Test
-	public void verifyTextPresenceAndFontSize() {
-		obj.verifyTextPresenceAndFontSize();
+	public void verifyExploreLetterOpenenersButton() {
+		obj.verifyExploreLetterOpenenersButton();
 	}
 
 }

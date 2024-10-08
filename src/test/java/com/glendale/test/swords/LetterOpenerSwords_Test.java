@@ -25,59 +25,28 @@ public class LetterOpenerSwords_Test extends BaseClass {
 	}
 	
 	@Test
-
-	public void testBranchDropdown() {
-		obj.testBranchDropdown();
-	}
-	
-	@Test
-	public void testBranchDropdownOptions() {
-		obj.testBranchDropdownOptions();
-	}
-
-	@Test
-	public void testPageLoadTime() {
-		obj.testPageLoadTime();
+	public void verifyProductImageSize() {
+		obj.verifyProductImageSize();
 	}
 	@Test
-	public void verifyTitleOfTheProductIsPresent() {
-		obj.verifyTitleOfTheProductIsPresent();
+	public void testSortFunctionality() {
+		obj.testSortFunctionality();
 	}
 	@Test
-	public void verifyPriceOfTheProductIsPresence() {
-		obj.verifyPriceOfTheProductIsPresence();
+	public void verifyResponsiveDesign() {
+		obj.verifyResponsiveDesign();
 	}
 	@Test
-	public void veryImageOfTheProductIsPresence() {
-		obj.veryImageOfTheProductIsPresence();
+	public void verifyPageLoadTime() {
+		obj.verifyPageLoadTime();
 	}
 	@Test
-	public void verifyDescriptionOfTheProduct() {
-		obj.verifyDescriptionOfTheProduct();
+	public void verifyProductsNameAndPricePresenceAndButtonsEnable() {
+		obj.verifyProductsNameAndPricePresenceAndButtonsEnable();
 	}
 	@Test
-	public void verifyRelatedProductSection() {
-		obj.verifyRelatedProductSection();
-	}
-	@Test
-	public void verifyTestimonialSectionIsPresence() {
-		obj.verifyTestimonialSectionIsPresence();
-	}
-	@Test
-	public void verifyAddToCartButtonPresence() {
-		obj.verifyAddToCartButtonPresence();
-	}
-	@Test
-	public void verifyAddToCartButtonFunctionality() {
-		obj.verifyAddToCartButtonFunctionality();
-	}
-	@Test
-	public void testProductIncreaseButton() {
-		obj.testProductIncreaseButton();
-	}
-	@Test
-	public void testProductDecreaseButton() {
-		obj.testProductDecreaseButton();
+	public void verifyExploreCeremonialMilitarySwordsButton() {
+		obj.verifyExploreCeremonialMilitarySwordsButton();
 	}
 
 }

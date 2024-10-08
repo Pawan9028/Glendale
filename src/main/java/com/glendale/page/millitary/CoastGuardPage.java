@@ -49,14 +49,14 @@ public class CoastGuardPage {
 	@FindBy(xpath = "//div[@class='gld-feat-simlr cguard-caremonials-bg']/ul/li/a")
 	List<WebElement> ceremonialItemsList;
 	
-	@FindBy(css = "body > div:nth-child(6) > div > div:nth-child(1) > div > div:nth-child(4) > div > div.gld-feat-simlr.gld-feat-fifty.jrotc-flags-bg-lg")
+	@FindBy(xpath = "//div[@class='gld-feat-simlr gld-feat-fifty jrotc-flags-bg-lg']")
 	WebElement flagsSection;
-	@FindBy(xpath = "//a[@href=\"/page/flags/\"]")
+	@FindBy(xpath = "//div[@class='gld-feat-simlr gld-feat-fifty jrotc-flags-bg-lg']/div/a")
 	WebElement flagsShopNowButton;
 	
-	@FindBy(css = "body > div:nth-child(6) > div > div:nth-child(1) > div > div:nth-child(4) > div > div.gld-feat-simlr.gld-feat-fifty.jrotc-cflags-bg-lg")
+	@FindBy(xpath = "//div[@class='gld-feat-simlr gld-feat-fifty jrotc-cflags-bg-lg']")
 	WebElement customFlagsSection;
-	@FindBy(xpath = "//div[@class='gld-feat-simlr gld-feat-fifty jrotc-cflags-bg-lg']/div[@class='jrotc-title-center']/a")
+	@FindBy(xpath = "//div[@class='gld-feat-simlr gld-feat-fifty jrotc-cflags-bg-lg']/div/a")
 	WebElement customFlagsShopNowButton;
 	
 	@FindBy(xpath = "//div[@id='sd-product-set-carousel-6e01b0f5-2ee9-406b-8453-2e92db3f8bb9']/div/div/div")

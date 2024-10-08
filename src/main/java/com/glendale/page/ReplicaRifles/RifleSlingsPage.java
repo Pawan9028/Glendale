@@ -61,7 +61,7 @@ public class RifleSlingsPage {
 	public void verifyPageTitle() {
 		methodToOpenTheRifleSlingsPage();
 		String actTitle = driver.getTitle();
-		String expTitle = "Replica Rifles - Rifle Slings - Glendale Parade Store";
+		String expTitle = "Shop High-Quality Rifle Slings | Glendale Parade Store";
 		Assert.assertEquals(actTitle, expTitle, "Title of the page does not matched.");
 		System.out.println("Title of the page is matched.");
 	}
